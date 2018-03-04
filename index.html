@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="keyword" content="record sound,recording,ino recorder">
+    <meta name="description" content="Inorain recorder for recording sound">
+    <title>Ino Voice Recorder</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+<div id="my_popup" style="display: none">
+    <div id="close">X</div>
+    <div id="pop_up_inner">
+        <h2 style="text-align: center">Listen your record ...</h2>
+        <audio controls src="" id="listen_record"></audio>
+        <button id="download_btn"><a href="" id="download_link">Download</a></button>
+        <button id="record_new">Record New</button>
+    </div>
+</div>
+
+<img id="record" src="images/voice-recorder.svg" alt="recorder">
+<img id="recording" src="images/recording.gif" alt="recording"><div id="recording_time">00:00:00</div>
+<div id="control">
+    <ul>
+        <li id="play" style="width: 53px;display: none">
+            <img id="play_img" src="images/play-button.svg" alt="play_button">
+        </li>
+        <li id="pause" style="width: 53px;display: none">
+            <img  src="images/pause-button.svg" alt="play_button">
+        </li>
+        <li id="stop"><img src="images/stop.svg" alt=""></li>
+    </ul>
+</div>
+<script src="js/main.js"></script>
+</body>
+</html>
